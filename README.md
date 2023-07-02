@@ -1,3 +1,3 @@
 # manhwa-tracker
 
-chrome extension and backend for tracker manhwa titles and chapters read online.
+chrome extension to track manhwa titles and chapters read online on specific scanlation sites.
