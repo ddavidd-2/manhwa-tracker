@@ -12,7 +12,7 @@ const validSites = [
   {
     name: 'Zero Scans',
     url: 'zeroscans.com',
-    regexp: /Chapter (?<chapter>\d+), (?<title>.*) . Zero Scans/,
+    regexp: /Chapter (?<chapter>\d+), (?<title>.*) • Zero Scans/,
   },
   {
     name: 'Flame Scans',
@@ -27,7 +27,7 @@ const validSites = [
   {
     name: 'Leviatan Scans',
     url: 'leviatanscans.com',
-    regexp: /(?<title>.*) - Chapter (?<chapter>\d+) - Luminous Scans ~/,
+    regexp: /(?<title>.*) - Chapter (?<chapter>\d+) - Leviatan Scans ~/,
   }
 ];
 
