@@ -8,22 +8,13 @@
         "default_popup": "popup.html"
     },
 
-    "host_permissions": [
-        "https://www.asurascans.com/*",
-        "https://reaperscans.com/*",
-        "https://zeroscans.com/*",
-        "https://flamescans.org/*",
-        "https://luminousscans.com/*",
-        "https://en.leviatanscans.com/*"
-    ],
     "permissions": [
         "tabs",
         "activeTab",
-        "background",
-        "storage"
+        "background"
     ],
     "background": {
-        "service_worker": "scripts/background.js",
+        "service_worker": "background.js",
         "type": "module"
     }
 }

@@ -1,0 +1,35 @@
+html {
+  /* variables */
+  --bg-dark-theme: hsl(0deg, 0%, 10%);
+  --bg-light-theme: hsl(246deg, 18%, 83%);
+  --text-dark-theme: hsl(0deg, 0%, 90%);
+  --text-light-theme: hsl(0deg, 0%, 10%);
+  --color-border: hsl(262deg, 48%, 62%);
+
+  min-width: 200px;
+  width: fit-content;
+  padding: 0 8px;
+}
+
+body {
+  width: 100%;
+  background-color: var(--bg-light-theme);
+  padding: 0;
+  margin: 0;
+}
+
+.top-border {
+  position: absolute;
+  height: 8px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-border);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark-theme);
+    color: var(--text-dark-theme);
+  }
+}
