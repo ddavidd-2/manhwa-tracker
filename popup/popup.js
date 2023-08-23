@@ -1,4 +1,4 @@
-import { validSites } from "./constants.js";
+import { validSites } from "../constants.js";
 
 async function getCurrentTab() {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
@@ -25,3 +25,7 @@ validSites.find((site) => {
     }
   }
 });
+
+document.getElementById('webapp-button').onclick = () => {
+  chrome.tabs.create({url: '../webapp/index.html'});
+};
