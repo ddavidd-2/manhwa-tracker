@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "chrome-extension://hbdlbckjjdbimaencnhibldchhiobkjc/build/static/css/main.efba59e1.css",
+    "main.js": "chrome-extension://hbdlbckjjdbimaencnhibldchhiobkjc/build/static/js/main.9e4c0417.js",
+    "index.html": "chrome-extension://hbdlbckjjdbimaencnhibldchhiobkjc/build/index.html",
+    "main.efba59e1.css.map": "chrome-extension://hbdlbckjjdbimaencnhibldchhiobkjc/build/static/css/main.efba59e1.css.map",
+    "main.9e4c0417.js.map": "chrome-extension://hbdlbckjjdbimaencnhibldchhiobkjc/build/static/js/main.9e4c0417.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efba59e1.css",
+    "static/js/main.9e4c0417.js"
+  ]
+}

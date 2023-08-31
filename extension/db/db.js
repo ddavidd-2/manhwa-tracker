@@ -33,10 +33,8 @@ export function get(db, key) {
     /* open transaction */
     const transaction = db.transaction(['manhwa'], 'readonly');
     transaction.oncomplete = () => {
-      console.log('transaction successfully opened');
     }
     transaction.onerror = () => {
-      console.log('get transaction failed');
       reject('error opening transaction');
     }
 
@@ -47,7 +45,6 @@ export function get(db, key) {
     const storeRequest = store.get(key);
 
     storeRequest.onsuccess = () => {
-      console.log('successfully retrieved manhwa record');
       resolve(storeRequest.result);
     }
 
@@ -62,7 +59,6 @@ export function set(db, value) {
     /* open transaction */
     const transaction = db.transaction(['manhwa'], 'readwrite');
     transaction.oncomplete = () => {
-      console.log('transaction successfully opened');
     }
 
     transaction.onerror = () => {
@@ -90,7 +86,6 @@ export function getAll(db) {
     /* open transaction */
     const transaction = db.transaction(['manhwa'], 'readwrite');
     transaction.oncomplete = () => {
-      console.log('transaction successfully opened');
     }
 
     transaction.onerror = () => {
@@ -104,7 +99,6 @@ export function getAll(db) {
     const storeRequest = store.getAll();
 
     storeRequest.onsuccess = () => {
-      console.log('successfully retrieved all data');
       resolve(storeRequest.result);
     }
 

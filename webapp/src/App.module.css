@@ -1,0 +1,35 @@
+html {
+  --color-purple: #893fde;
+  --color-black-primary: #16151d;
+  --color-black-hover: #323040;
+  --color-white: #dfdfdf;
+  --color-gray: #a6a6a6;
+
+  --color-manhwa: #262626;
+  --color-manhwa-hover: #343434;
+
+  --color-text-primary: var(--color-white);
+  --color-text-secondary: var(--color-gray);
+
+  --color-background: var(--color-black-primary);
+  --color-background-hover: var(--color-black-hover);
+  --color-background-focus: var(--color-black-hover);
+  
+  
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+.wrapper {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}

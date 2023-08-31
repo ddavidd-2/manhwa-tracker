@@ -1,0 +1,36 @@
+.manhwaWrapper {
+  display: flex;
+  background-color: var(--color-manhwa);
+  margin: 4px 0;
+  padding: 6px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.manhwaWrapper:hover {
+  background-color: var(--color-manhwa-hover);
+}
+
+.titleChapter > div, .dateSite {
+  color: var(--color-text-secondary);
+}
+
+.dateSite {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 200px;
+}
+
+.siteLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.siteLink:hover {
+  color: white;
+}
+
+h3 {
+  margin: 0;
+}

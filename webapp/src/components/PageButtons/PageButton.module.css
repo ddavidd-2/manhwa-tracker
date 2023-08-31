@@ -1,0 +1,9 @@
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.buttonWrapper > button {
+  color: var(--color-white-primary);
+}

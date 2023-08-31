@@ -17,7 +17,6 @@ async function main() {
 
       /* create manhwa object */
       let manhwaRecord;
-      console.log('creating manhwa object (hopefully)');
       validSites.find((site) => {
         if (tab.url.includes(site.url)) {
           const match = tab.title.match(site.regexp);
@@ -29,7 +28,6 @@ async function main() {
               site: site.name,
               lastRead: new Date(),
             }
-            console.log('manhwa record created');
           }
         }
       });
@@ -38,21 +36,14 @@ async function main() {
       if (manhwaRecord) {
         try {
           const stored = await get(db, manhwaRecord.title);
-          console.log('manhwa retrieved');
           if (!stored) {
-            console.log('manhwa not in db. adding...');
             await set(db, manhwaRecord);
           } else if (stored.chapter < manhwaRecord.chapter) {
-            console.log('stored manhwa exists, updating record in db');
             await set(db, manhwaRecord);
-          } else {
-            console.log('db contains same manhwa with higher chapter number');
-          }
+          }        
         } catch (error) {
           console.error(error);
         }
-      } else {
-        console.log('undefined manhwa: unable to update db');
       }
     }
   });

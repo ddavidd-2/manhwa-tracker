@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.searchBar {
+  padding: 2px 4px;
+  padding-right: 20px;
+}
+
+.clearButton {
+  border: none;
+  background: transparent;
+  color: black;
+  transform: translateX(-110%);
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+
+.clearButton:hover {
+  background-color: #939393aa;
+}
+
+.clearButton:disabled {
+  color: white;
+}
+
+.clearButton:disabled:hover {
+  background-color: transparent;
+}

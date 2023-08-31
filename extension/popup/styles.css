@@ -29,8 +29,8 @@ body {
   background-color: var(--color-border);
 }
 
-h2 {
-  margin-bottom: 0;
+#chapter {
+  margin-top: -10px;
 }
 
 p {

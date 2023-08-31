@@ -1,7 +1,7 @@
 export const validSites = [
   {
     name: 'Asura Scans',
-    url: 'asura.nacm.xyz',
+    url: 'asuracomics.com',
     regexp: /(?<title>.*) Chapter (?<chapter>\d+) . Asura Scans/,
   },
   {

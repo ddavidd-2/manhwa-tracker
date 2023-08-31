@@ -4,7 +4,7 @@
     "version": "1.0",
     "description": "Automatically track progress of manhwa titles read on variety of sites",
     "action": {
-        "default_popup": "./popup/popup.html"
+        "default_popup": "./popup/index.html"
     },
     "icons": {
         "16": "icons/favicon-16x16.png",
@@ -19,5 +19,9 @@
     "background": {
         "service_worker": "background.js",
         "type": "module"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';",
+        "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
     }
 }

@@ -1,0 +1,16 @@
+.sortSelect {
+  background: transparent;
+  color: inherit;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 2px;
+}
+
+.sortSelect:hover {
+  background-color: var(--color-background-hover);
+}
+
+.sortSelect:focus {
+  background-color: var(--color-background-focus);
+}
