@@ -14,10 +14,14 @@ html {
 
 body {
   width: 100%;
-  background-color: var(--bg-light-theme);
+  background-color: var(--bg-dark-theme);
   padding: 0;
   margin: 0;
-  color: var(--text-light-theme);
+  color: var(--text-dark-theme-secondary);
+}
+
+h2 {
+  color: var(--text-dark-theme-primary);
 }
 
 .top-border {
@@ -37,13 +41,6 @@ p {
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--bg-dark-theme);
-    color: var(--text-dark-theme-primary);
-  }
-
-  .current-manhwa .p {
-    color: var(--text-dark-theme-secondary);
-  }
+button {
+  margin: 4px 0;
 }
