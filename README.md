@@ -18,3 +18,15 @@ mv webapp/build extension/build
 Then, go to your [chrome extensions page](chrome://extensions/), turn on Developer Mode, and click load unpacked.
 
 Load only the extension directory into Chrome.
+
+### Features
+
+Tracks various information of manhwa titles:
+- Title
+- Chapter
+- Last Read
+- Scanlation Site
+
+Search for specific manhwa based on title.
+
+Sort manhwa by title or time read.
